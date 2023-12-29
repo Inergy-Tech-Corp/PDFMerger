@@ -1,27 +1,35 @@
 {
-    "name": "myokyawhtun/pdfmerger",
-    "description": "PDFMerger for PHP (PHP 5 and up to PHP 7.1 Compatible)",
+    "name": "inergytechcorp/pdfmerger",
+    "description": "PDFMerger for PHP (PHP 5 and up to PHP 8.1 Compatible)",
     "authors": [
-    	{
-    		"name":"Jarrod Nettles",
-    		"email": "jarrod@squarecrow.com"
-    	},
-    	{
-    		"name":"Vasiliy Zaytsev",
-    		"email":"vasiliy.zaytsev@ffwagency.com"
-    	},
-    	{
-    		"name":"Myo Kyaw Htun",
-    		"email":"myochauhtun@gmail.com"
-    	}
+        {
+            "name": "Jarrod Nettles",
+            "email": "jarrod@squarecrow.com"
+        },
+        {
+            "name": "Vasiliy Zaytsev",
+            "email": "vasiliy.zaytsev@ffwagency.com"
+        },
+        {
+            "name": "Myo Kyaw Htun",
+            "email": "myochauhtun@gmail.com"
+        },
+        {
+            "name": "Leo Alfaro",
+            "email": "leo.alfaro@inergytech.com"
+        }
     ],
-    "require":{
-    	"php": ">=5.2.0"
+    "license": "MIT",
+    "require": {
+        "php": ">=5.2.0",
+        "tecnickcom/tcpdf": "^6.6",
+        "propa/tcpdi": "^1.3",
+        "libresign/tcpdi_parser": "^0.4"
     },
-    "minimum-stability":"dev",
-    "autoload":{
-    	"psr-0":{
-    		"PDFMerger": "PDFMerger.php"
-    	}
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "InergyTechCorp\\PDFMerger\\": "src"
+        }
     }
 }

@@ -4,9 +4,9 @@ PDFMerger created by Jarrod Nettles December 2009 jarrod@squarecrow.com
 
 Updated by Vasiliy Zaytsev February 2016 vasiliy.zaytsev@ffwagency.com
 
-- Uses tcpdf 6.2.12 by Nicola Asuni
-- Uses patched tcpdi_parser 1.0 by Paul Nicholls with own TCPdiParserException
-- Uses TCPDI 1.0 by Paul Nicholls with FPDF_TPL extension 1.2.3 by Setasign
+- Uses tcpdf 6.6.5 by Nicola Asuni
+- Uses patched tcpdi_parser 0.4 by Vitor Mattos with own TCPdiParserException
+- Uses TCPDI 1.3.4 by Pavel Kulbakin with FPDF_TPL extension 1.2.3 by Setasign
 
 ## PHP 5,6,7 and 8 Compatible
 
@@ -14,7 +14,7 @@ I have made some changes in original codes to make PHPMerger compatible for PHP 
 
 - Update
 
-I tested with PHP 7.1 on my local machine and it still works.
+Successfully tested with PHP 8.1.
 
 ## Support of PDF 1.5 and PDF 1.6
 
@@ -23,9 +23,8 @@ FPDF and FPDI libraries replaced by TCPDF with TCPDI extension and parser.
 ### Using Namespace
 
 ```php
-require_once ('PDFMerger/PDFMerger.php');
+use InergyTechCorp\PDFMerger\PDFMerger;
 
-use PDFMerger\PDFMerger;
 $pdf = new PDFMerger;
 
 $pdf->addPDF('a.pdf');
