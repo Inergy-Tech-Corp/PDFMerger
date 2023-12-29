@@ -20,23 +20,9 @@ Successfully tested with PHP 8.1.
 
 FPDF and FPDI libraries replaced by TCPDF with TCPDI extension and parser.
 
-### Using Namespace
-
-```php
-use InergyTechCorp\PDFMerger\PDFMerger;
-
-$pdf = new PDFMerger;
-
-$pdf->addPDF('a.pdf');
-$pdf->addPDF('b.pdf');
-
-$pdf->merge('download','merged.pdf');
-```
-
 ### Example Usage
 ```php
-include 'PDFMerger.php';
-
+use InergyTechCorp\PDFMerger\PDFMerger;
 $pdf = new PDFMerger; // or use $pdf = new \PDFMerger; for Laravel
 
 $pdf->addPDF('samplepdfs/one.pdf', '1, 3, 4');
